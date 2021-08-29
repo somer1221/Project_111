@@ -1,0 +1,55 @@
+body {
+    font-family: 'Special Elite,' cursive;
+    background-color:steelblue;
+}
+
+.header_bar, .closing {
+    background-color: white;
+    color: #ce2700;  
+    float:none;
+    padding-top:20px;
+}
+
+.closing {
+    padding-bottom:15px;
+    font-family: 'Special Elite,' cursive;
+}
+
+.header_bar img {
+    width:100px;
+    height:100px;
+}
+
+.photo {
+    background-color: lightblue;
+    padding:15px;
+    border:3px solid white;
+    border-radius: 20px;
+    margin:10px;
+    float:none;
+}
+
+.photo label{
+    background-color: #ffd2c7;
+    padding:10px;
+    margin-bottom:0px;
+    width:290px;
+    z-index:9999;
+    border-radius: 20px;
+}
+
+#image {
+    width: 290px;
+    height: 290px;
+    border: 2px coral solid;
+    border-radius: 20px;
+}
+
+.res1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+img {
+    width:290;
+    height:290;
+}

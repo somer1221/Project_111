@@ -1,0 +1,222 @@
+<html>
+
+<head>
+    <title>Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <center>
+        <div class="col-xs-12 col-md-9 header_bar">
+            <h2>Case Study Relating to Microsoft Azure and MobileNet <img id="case_study" src="755732a5-16fa-4e5b-abb3-70cf01aae776.png"> </h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 1-</label>
+            <div id="image" class="img-responsive"><img src="ac remote.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure1">A close up of a remote</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile1"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 2-</label>
+            <div id="image" class="img-responsive"><img src="banana.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A banana sitting on top of a wooden table</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result2"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 3-</label>
+            <div id="image" class="img-responsive"><img src="donut.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A donut sitting next to a cup of coffee</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 4-</label>
+            <div id="image" class="img-responsive"><img src="laptop.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">An open laptop computer sitting on top of a wooden table</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 5-</label>
+            <div id="image" class="img-responsive"><img src="microwav.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A microwave oven sitting on top of a stove</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result2"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 6-</label>
+            <div id="image" class="img-responsive"><img src="pan.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A stove top oven</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 7-</label>
+            <div id="image" class="img-responsive"><img src="roku remote.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A close up of a speaker</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 8-</label>
+            <div id="image" class="img-responsive"><img src="rug.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A close up of a rug</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 9-</label>
+            <div id="image" class="img-responsive"><img src="soap.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A close up of a bottle on the counter</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-sm-6 photo"> <label>Test Image 10-</label>
+            <div id="image" class="img-responsive"><img src="water bottle.jpg"></div> 
+            
+            <h5>Output on <b>Microsoft Azure:</b>
+            <span id="azure2">A close up of a bottle</span>
+            </h5>
+
+            <h5>Output on <b>MobileNet:</b>
+            <span id="mobile2"></span>
+            </h5>
+
+            <div class="res1">
+               <h4>Result -</h4>
+               <hr>
+               <h4 id="result1"></h4>
+            </div>   
+
+        </div>
+
+        <div class="col-xs-12 col-md-9 closing">
+           <h4>So, after 10 images have been evaluated,
+               <span id="first"></span>
+               <span id="second"></span>
+               I can confidently say that my case study has led me to the conclusion that 
+               <span id="victorname"></span>
+               is better at identifying objects.
+           </h4> 
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>
